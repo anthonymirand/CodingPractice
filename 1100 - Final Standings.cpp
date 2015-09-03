@@ -17,7 +17,7 @@ int main()
         cin >> id >> score;
         team.push_back(make_pair (id, score));
     }
-    stable_sort(team.begin(), team.end(), pari_compare);
+    stable_sort(team.begin(), team.end(), pair_compare);
     // stable_sort implementing a lambda function:
     // stable_sort(team.begin(), team.end(), 
     //  	     	[] (const pair<int, int>& first_element, const pair<int, int>& second_element)

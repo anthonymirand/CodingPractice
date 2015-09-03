@@ -5,7 +5,7 @@
 using namespace std;
 int main()
 {
-	double numbers;
+    double numbers;
     vector<double> vectors;
     while (cin >> number) 
         vectors.push_back(numbers);
