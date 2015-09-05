@@ -1,17 +1,20 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 int main()
 {
-    int N;
+    int N, row, col, answer;
     string position;
+    
     cin >> N;
     for (int i = 0; i < N; i++)
     {
         cin >> position;
-        int row = position[0] - 'a';
-        int col = position[1] - '1';
-        int answer = 0;
+        row = position[0] - 'a';
+        col = position[1] - '1';
+        answer = 0;
+        
         for (int dr = -1; dr <= 1; dr += 2)
             for (int dc = -1; dc <= 1; dc += 2)
             {
@@ -22,5 +25,6 @@ int main()
             }
         cout << answer << endl;
     }
+    
     return 0;
 }

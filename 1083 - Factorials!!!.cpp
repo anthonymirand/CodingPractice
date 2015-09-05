@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 int main()
 {
     int N;
     int K = 0, answer = 1;
     string exclamation;
-    cin >> N;
-    cin >> exclamation;
+    
+    cin >> N >> exclamation;
     K = exclamation.size();
     while (N > 0)
     {
@@ -15,5 +16,6 @@ int main()
         N -= K;
     }
     cout << answer << endl;
+    
     return 0;
 }

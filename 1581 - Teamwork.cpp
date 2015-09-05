@@ -1,17 +1,21 @@
- #include <iostream>
+#include <iostream>
 using namespace std;
+
 int main()
 {
     int N, value;
     int counter = 1;
     int numbers[1000];
+    
     cin >> N;
     for (int i = 0; i < N; i++)
     {
         cin >> value;
         numbers[i] = value;
     }
+    
     numbers[N] = -1;
+    
     for (int i = 1; i <= N; i++)
     {
         if (numbers[i] != numbers[i - 1])
@@ -23,5 +27,6 @@ int main()
             counter++;
     }
     cout << endl;
+    
     return 0;
 }

@@ -1,8 +1,10 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
     int N;
+    
     cin >> N;
     if (N < 5)
         cout << "few" << endl;
@@ -22,5 +24,6 @@ int main()
         cout << "zounds" << endl;
     else
         cout << "legion" << endl;
+    
     return 0;
 }

@@ -2,12 +2,14 @@
 #include <string>
 #include <map>
 using namespace std;
+
 int main()
 {
     int N;
     int position = 1, steps = 0;
     string name;
     map<char, int> mailbox;
+    
     mailbox['A'] = 1;
     mailbox['P'] = 1;
     mailbox['O'] = 1;
@@ -21,6 +23,7 @@ int main()
     mailbox['K'] = 3;
     mailbox['T'] = 3;
     mailbox['W'] = 3;
+    
     cin >> N;
     for (int i = 1; i <= N; i++)
     {
@@ -31,6 +34,7 @@ int main()
             steps += position - mailbox[name[0]];
         position = mailbox[name[0]];
     }
-    cout << steps << endl;;
+    cout << steps << endl;
+    
     return 0;
 }

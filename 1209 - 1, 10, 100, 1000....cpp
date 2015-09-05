@@ -10,13 +10,16 @@
     // 		n^2 + n - 2(p - 1) = 0
     // 		-1 + -sqrt(8p - 7) / 2
     // if 8p - 7 is a perfect square then the value at position p will be a 1
+
 #include <iostream>
 #include <math.h>
 using namespace std;
+
 int main()
 {
     int N, location;
     double numbers[65535];
+    
     cin >> N;
     for (int i = 0; i < N; i++)
     {
@@ -31,5 +34,6 @@ int main()
             cout << "0 ";
     }
     cout << endl;
+    
     return 0;
 }

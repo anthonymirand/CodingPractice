@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+
 int main()
 {
     int N, index;
@@ -10,6 +11,7 @@ int main()
     answer[0] = 2;
     isPrime[0] = false;
     isPrime[1] = false;
+    
     cin >> N;
     memset(isPrime, true, sizeof(isPrime));
     for (int i = 3; i < 164000 && size < 15000; i += 2)
@@ -28,5 +30,6 @@ int main()
         cin >> index;
         cout << answer[index - 1] << endl;
     }
+    
     return 0;
 }
