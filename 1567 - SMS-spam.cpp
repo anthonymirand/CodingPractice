@@ -12,7 +12,7 @@ int getcost(char character, char key[])
 
 int main()
 {
-    char keys[][4] = {"abc","def","ghi","jkl","mno","pqr","stu","vwx","yz",".,!"," "};
+    char keys[][4] = {"abc", "def", "ghi", "jkl", "mno", "pqr", "stu", "vwx", "yz", ".,!", " "};
     char character;
     int answer = 0;
     
