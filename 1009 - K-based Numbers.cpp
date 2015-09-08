@@ -2,7 +2,9 @@
 #include <cstring>
 using namespace std;
 
-long long count(long long memo[16][2], int N, int K, int zeros)
+long long memo[16][2];
+
+long long count(int N, int K, int zeros)
 {
     if (zeros == 2)
         return 0;
@@ -21,8 +23,8 @@ long long count(long long memo[16][2], int N, int K, int zeros)
         if (zeros == 1)
             retain = 0;
         else
-            retain = count(memo, N - 1, K, 1);
-        retain += (K - 1) * count(memo, N - 1, K, 0);
+            retain = count(N - 1, K, 1);
+        retain += (K - 1) * count(N - 1, K, 0);
     }
 
     return retain;
@@ -32,11 +34,10 @@ int main()
 {
     int N, K;
     long long answer;
-    long long memo[16][2];
 
     cin >> N >> K;
     memset(memo, -1, sizeof(memo));
-    answer = (K - 1) * (int)count(memo, N - 1, K, 0);
+    answer = (K - 1) * (int)count(N - 1, K, 0);
     cout << answer << endl;
 
     return 0;

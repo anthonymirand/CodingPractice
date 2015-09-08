@@ -23,7 +23,7 @@ void start(int N, int position)
         start(N, position + 1);
         cout << ')';
     }
-    inner(N + 1 - position,1);
+    inner(N + 1 - position, 1);
     cout << "+" << position;
 }
 
