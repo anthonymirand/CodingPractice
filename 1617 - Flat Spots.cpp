@@ -7,9 +7,9 @@ int main()
     int answer = 0;
     int wheels[101];
     
+    cin >> N;
     memset(wheels, 0, sizeof(wheels));
     
-    cin >> N;
     for (int i = 0; i < N; i++)
     {
         cin >> diamater;

@@ -4,13 +4,13 @@ using namespace std;
 
 int main()
 {
-	int N, number;
+    int N, number;
     bool list[65536];
     bool found = false;
 
     memset(list, false, sizeof(list));
 
-    cin >> N; 
+    cin >> N;
     for (int i = 0; i < N; i++)
     {
         cin >> number;

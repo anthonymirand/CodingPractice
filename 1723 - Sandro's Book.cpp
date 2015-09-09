@@ -9,9 +9,9 @@ int main()
     int index = 0;
     int maximum;
     
+    cin >> spell;
     memset(count, 0, sizeof(count));
     
-    cin >> spell;
     for (int i = 0; i < strlen(spell); i++)
         count[spell[i] - 'a']++;
     

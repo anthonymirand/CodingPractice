@@ -8,8 +8,8 @@ int main()
     char secret[101], answer[101];
     
     cin >> secret;
-    length = strlen(secret);
     memset(answer, 0, sizeof(answer));
+    length = strlen(secret);
     
     for (int i = length - 1; i > 0; i--)
     {

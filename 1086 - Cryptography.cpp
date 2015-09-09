@@ -8,12 +8,14 @@ int main()
     int size = 1;
     int answer[15000];
     bool isPrime[164000];
+    
     answer[0] = 2;
     isPrime[0] = false;
     isPrime[1] = false;
     
     cin >> N;
     memset(isPrime, true, sizeof(isPrime));
+    
     for (int i = 3; i < 164000 && size < 15000; i += 2)
     {
         if (isPrime[i])

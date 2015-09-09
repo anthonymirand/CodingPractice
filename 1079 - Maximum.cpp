@@ -12,6 +12,7 @@ int main()
         dynamic[i] = i;
         answer[i] = i;
     }
+    
     for (int i = 2; i < 100000; i++)
     {
         if (i & 1)
@@ -25,6 +26,7 @@ int main()
             answer[i] = answer[i - 1];
         }
     }
+    
     while (true)
     {
         cin >> N;

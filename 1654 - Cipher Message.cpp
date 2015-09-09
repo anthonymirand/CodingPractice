@@ -11,6 +11,7 @@ int main()
     
     cin >> message;
     size = (int)strlen(message);
+    
     for (int i = 0; i < size; i++)
     {
         char temp;
