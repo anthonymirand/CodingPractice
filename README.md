@@ -1,4 +1,2 @@
 # Timus Online Judge Solutions
-[Timus Online Judge](http://acm.timus.ru/)
-
-coded in C++
+[Timus Online Judge: anthonymirand](http://acm.timus.ru/author.aspx?id=187147)
